@@ -1,0 +1,14 @@
+.foot {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 41, 41);
+    border-top: 6px solid #501ee7;
+    box-sizing: border-box;
+}
+
+.foot p {
+    color: aliceblue;
+}

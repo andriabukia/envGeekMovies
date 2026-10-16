@@ -1,0 +1,124 @@
+.user {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.navy {
+    min-height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(48, 41, 41);
+    border-bottom: 6px solid #501ee7;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navy p {
+    color: aliceblue;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.logo {
+  height: auto;
+  max-height: 100px;
+  width: 100%;
+  max-width: 140px;
+  object-fit: contain;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    text-align: center;
+    background: linear-gradient(to top, #501ee7, black);
+    color: aliceblue;
+    font-size: 16px;
+    border: 1px solid #501ee7;
+    outline: none;
+}
+
+button {
+    background: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.active-filter {
+    background-color: #501ee7;
+}
+
+.rowyo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.wishlists {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid #501ee7;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 100;
+  max-width: calc(100vw - 20px);
+  box-sizing: border-box;
+}
+
+.wishlists button {
+    background-color: black;
+    color: aliceblue;
+    border: 1px solid #501ee7;
+    height: 30px;
+    width: 80px;
+}
+.inpers{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+}
+
+@media (max-width:768px) {
+    .row{
+        gap: 10px;
+    }
+    .navy p {
+        font-size: 14px;
+    }
+    .navy{
+        flex-direction: column;
+    }
+    .inpers{
+
+        gap: 40px;
+    }
+}

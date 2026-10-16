@@ -1,0 +1,149 @@
+.closeup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  }
+
+  @keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    /* 75%{
+        transform: translateY(-5px);
+    } */
+    100%{
+        transform: translateY(0px);
+    }
+  }
+
+.global {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  max-width: 900px;
+  width: 90%;
+  animation: float 0.5s linear;
+}
+
+
+.columnz {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; 
+  gap: 10px;
+  text-align: left;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.topRow p {
+  font-size: 22px;
+  font-weight: bold;
+  color: aliceblue;
+  margin: 0;
+}
+
+.topRow button {
+  background: aliceblue;
+  border: none;
+  cursor: pointer;
+  border: 3px solid #501ee7;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topRow button img {
+  width: 30px;
+  height: 30px;
+}
+
+.movie-desc {
+  color: aliceblue;
+  font-size: 14px;
+  margin: 0;
+}
+
+.sumInfo {
+  color: aliceblue;
+  margin: 0;
+  font-size: 14px;
+}
+
+.sumInfo span {
+  color: rgb(241, 210, 30);
+}
+
+.movie-genre {
+  color: #1e1e1e;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 2px solid #501ee7;
+  background-color: aliceblue;
+  transition: all 0.4s ease;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.movie-genre:hover {
+  background-color: #6c41eb;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.global img {
+  max-height: 400px;
+  max-width: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width:768px) {
+    .global{
+        max-width: 600px;
+        max-height: 600px;
+    }
+    .topRow p{
+        font-size: 15px;
+    }
+    .movie-desc{
+        font-size: 12px;
+    }
+    .global img{
+        max-height: 300px;
+        max-width: 280px;
+    }
+    .columnz{
+        gap: 3px;
+    }
+    .movie-genre{
+        font-size: 10px;
+    }
+}
